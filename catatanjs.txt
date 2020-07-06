@@ -1,0 +1,143 @@
+======================================
+
+TIPE DATA
+
+======================================
+
+Tipe data angka pada javascript :
+- Angka tanpa desimal
+cth : 10, 1500, 123456
+- Angka dengan desimal
+cth : 3.14 , 0.5, 100.00
+- Eksponen
+cth : 123e5 // 12300000 atau 123e-5 // 0.00123
+- Bilangan negatif
+- Jgn pernah mengawali angka di javascript dengan angka 0, dikarenakan dianggap bilangan oktal
+- Jgn pernah mengawali angka dengan 0xFF karna dikarenakan dianggap bilangan hexadesimal
+
+Angka Spesial :
+- Infinity seperti 2/0 atau -2/0
+- Nan (Not a Number) seperti 0/0. atau angka dibagi string
+
+
+Operator pada Javascript :
+Operator -> simbol yang digunakan untuk melakukan suatu operasi.
+
+binary -> membutuhkan 2 buah operand
+- aritmatika
+-- contoh : +,-,*,/,% (sisa bagi)
+- penugasan
+-- contoh : 
+-- = (sama dengan)
+-- += (tambah sama dengan)
+-- -= (kurang sama dengan)
+-- *= (kali sama dengan)
+-- /= (bagi sama dengan)
+-- %= (sisa bagi sama dengan)
+- perbandingan
+-- seperti untuk tipe data boolean
+- logika
+-- contoh :
+-- && (AND)
+-- || (OR)
+-- ! (NOT)
+- string
+unary -> membutuhkan 1 buah operand
+- type of 
+-- Mengecek tipe data dari sebuah operand, biasanya typeof (operand)
+ternary -> membutuhkan 3 buah operand
+- kondisional
+contoh if
+(kondisi) ? benar : salah
+(x % 2 == 0) ? "genap" : "ganjil"
+
+Tipe data String
+-- Berfungsi untuk mempresentasikan data tekstual, biasanya menggunakan di dalam tanda kutip, baik kutip 1 atau pun kutip 2 contoh : "Chen" / 'Indra'
+Kutip 1 dipakai jika kalau ada kutip 2 di dalam kalimat tersebut, atau Kutip 2 dipakai jika ada kutip 1 di dalam kalimat.
+Jika dibutuhkan keduanya,  maka pakai escape karakter contoh \' atau \''
+\0 - karakter NULL
+\' - '
+\" - "
+\\ - \
+\n - new line / baris baru
+\t - tab
+\b - backspace
+\uXXXX - unicode
+
+Concat : -> Pengabungan dua buah string
+string.length : -> menghitung jumlah karakter pada sebuah string termasuk spasi
+
+
+undefined = mendeklarasikan variable tanpa nilai
+null = nilai kosong yg berikan pada sebuah variable
+
+
+Variabel 
+1. Deklarasi -> mendaftarkan variabel ke dalam lingkup yang sesuai
+2. Inisialisasi -> menyediakan memori untuk variabel
+3. Assignment -> menetapkan nilai yang spesifik ke dalam variabel
+
+contoh  : 
+var x; // Deklarasi dan Inisialisasi
+x = 20; // Assignment
+
+Pada di javascript ada 3 macam Deklarasi variabel, yaitu
+var, let, const
+
+Ketentuan penamaan variabel :
+1. Tidak boleh ada spasi
+2. Angka tidak boleh didepan nama
+3. Boleh simbol
+4. Ada beberapa keyword / reserverd word yg tidak boleh dijadikan nama variabel, biasanya mirip dengan sintaks javascript
+
+Biasa memakai cara shorthand dalam Deklarasi variabel, contoh
+var nama = "Chen",
+      umur = 23,
+      lulus = true;
+
+variabel scope -> 
+=======================================
+
+POP UP / Dialog box
+
+==============================================
+
+Alert -> Pop up dengan tombol ok
+contoh penggunaan : 
+alert('Nama Saya Indra');
+
+Prompt -> Pop up dengan textbox di dialog box tersebut
+contoh penggunaan : 
+var nama = prompt('masukkan nama: ');
+alert("Nama saya adalah" + nama);
+atau
+var nama = prompt("Silahkan masukkan nama anda :")
+alert('Hello ' + nama + '!');
+
+Confirm - > Pop up dengan pilihan ok atau cancel, sehingga ada 2 kondisi
+contoh penggunaan :
+var test = confirm('kamu yakin?');
+if (test === true) {
+    alert('user menekan OK!');
+} else {
+    alert('user menekan tombol cancel');
+}
+
+Normal Flow :
+Pengulangan - > Loop / Iterasi
+Pengkondisian -> Percabangan
+
+Contoh :
+var angka = prompt('Silahkan masukkan angka');
+if (angka % 2 === 0) {
+    alert(angka + " adalah bilangan genap");
+} else {
+    alert(angka + " adalah bilangan ganjil");
+}
+
+parseInt(isi); = convert to Int.
+
+
+
+
+

@@ -1,0 +1,105 @@
+Github
+Repository set private, maks hanya 3 orang utk akun gratis.
+Utk lihat commit visual, bisa klik nama repo, lalu insight, lalu network.
+Pull Request -> Minta izin fitur atau perubahan dari branch dan gabung ke master.
+
+
+Git
+Command list:
+$git = Untuk listing perintah yg ada pada git
+--------
+$git --version = Untuk mengecek versi git pada OS
+--------
+3 area pada repo Git
+- Working Tree = Folder tempat bekerja
+- Staging Area = Beri tau git, ada melakukan perubahan atau tidak
+- History = Area ada commit apa aja
+utk Staging Area dan History disimpan dalam format .git
+
+--------
+$pwd    = Print Working Directory = Cek posisi Folder
+$clear    = Clear list di cmd 
+$ls         = Cek ada list folder apa saja di direktori
+$cd        = Change Directory = Cek posisi folder
+$git init = Mengubah folder menjadi Repository
+$git status = Melihat perubahan yang ada pada repo
+$git add namafile.f = Menambah file changes ke  staging area
+$git add . = Untuk menambah semua file changes ke
+staging area
+
+Untuk setting awal git utk melakukan commit di awal
+$git config --global user.name "SennenHyorou"
+$git config --global user.email "chenindraxr2@gmail.com"
+
+Jika ga sengaja masuk ke cmd vim, maka tekan escape lalu
+ketik :q! untuk kembali semula
+
+Command list untuk melakukan commit :
+1. Add files yg ada perubahan ke staging area terlebih dahulu 
+menggunakan $git add namafile untuk 1 file atau $git add .
+untuk banyak file
+2.Klik perintah dengan format
+$git commit -m "Isi messagenya"
+Fungsi -m adalah memasukkan message pada commit
+
+------
+$git log = Mengecek history commit
+$git log -3 = Mengecek history 3 commit terakhir
+$git log --namafile.f = Mengecek history commit file tertentu
+------
+$git checkout 5angkacommitpertama -- namafile.f =
+Pindah ke commit sebelumnya, dengan file tertentu
+
+JIKA COMMIT PADA FILE YANG MODIFIED, BISA DILAKUKAN :
+1. Dikarenakan sebelumnya sudah pernah masuk staging area, lalu commit,
+setelahnya masih ada melakukan perubahan file tersebut jadi status modified,
+maka bisa langsung commit dengan mengetikkan.
+$git commit --am "message"
+
+
+------
+MATERI BRANCH DAN MERGE
+$git branch = Mengecek ada branch apa saja pada repo
+$git branch namabranch = Membuat branch baru
+$git log --all --decorate --oneline --graph = Melihat detail log branch
+$alias graph="git log --all --decorate --oneline --graph"
+ = Melihat detail log branch
+ $git checkout namabranch =  Pindah branch
+ (UNTUK MELIHAT LAGI ADA DIBRANCH MANA BISA GIT BRANCH lalu Cek
+ NAMA BRANCH WARNA HIJAU, dan lihat HEADNYA ADA DIBRANCH APA
+ PAS DILOG)
+
+ ------
+ $git merge namabranch = mengmerge branch dari namabranch 
+ ke branch head
+ $git branch --merged = menampilkan branch yang sudah di merged
+ $git branch -d namabranch = menghapus branch
+ Jika ingin menghapus branch yg tanpa dimerge terlebih dahulu ganti -d jadi -D
+
+Ada 2 jenis merge :
+1. Fast Forward Merge : Ada direct path
+2. Three-way Merge : Tidak ada direct pathnya
+
+Conflict Merge : Ada perubahan di 1 baris yang sama pada suatu file, dan 
+file tersebut masing2 ada dari 2 branch, sehingga pada saat commit, 
+akan muncul merging commit, sehingga perlu di resolve manual.
+Setelah itu, jgn lupa masukin ke staging area, lalu lakukan commit.
+
+CHECKOUT COMMIT LALU BUAT BRANCH baru
+-git checkout kodecommit(5angka)
+-graph lagi, cek headnya udah detach ke commitnya belum
+-lalu buat branch baru
+-graph lagi, harusnya head masih dicommit lama, bukan di branch baru
+-checkout out ke branch baru, untuk melanjutkan project dari commit tersebut.
+
+
+Catatan :
+Supaya semuanya dilakukan di Command prompt, lakukan command ini:
+cd <path> = Untuk berpindah directory.
+md <nama folder> = Untuk membuat sebuah folder dalam working directory.
+cd. > <nama file.extension file> = Untuk membuat sebuah file dalam working directory.
+rd <nama folder> /q /s = Untuk menghapus bersih folder yang ditentukan.
+ren <nama file/folder> = Untuk merename folder/file.
+cls = Untuk clear terminal
+code . = Untuk membuka VSCode dalam working directory.
+Semoga membantu.
