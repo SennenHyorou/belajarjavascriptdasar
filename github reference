@@ -92,6 +92,29 @@ CHECKOUT COMMIT LALU BUAT BRANCH baru
 -graph lagi, harusnya head masih dicommit lama, bukan di branch baru
 -checkout out ke branch baru, untuk melanjutkan project dari commit tersebut.
 
+SEBELUM MEMAKAI FITUR GIT DAN GITHUB, pastikan akunnya sudah tersambung
+$ git config --list, untuk mengecek detailnya, terutama bagian username dan email
+LALU JIKA MAU SET ULANG, maka
+$git config --global user.name "SennenHyorou"
+$git config --global user.email "chenindraxr2@gmail.com"
+
+--global untuk semua repository
+--local untuk 1 repository saja
+
+
+
+
+
+CARA PUSH DARI GIT KE REMOTE GITHUB 
+1. Buat repo lokal di git terlebih dahulu
+2. Buat repo digithub dgn nama repo yg sama dgn git, kemudian jgn centang bagian readme, setelah itu next saja.
+3. Lalu copykan code dari "or push an existing repository from the command line"
+4. Kemudian pada git local, setelah melakukan push, maka github akan muncul listnya.
+
+
+
+
+
 
 Catatan :
 Supaya semuanya dilakukan di Command prompt, lakukan command ini:
